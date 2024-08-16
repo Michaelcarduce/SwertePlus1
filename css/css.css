@@ -1,0 +1,752 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* CSS Reset */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  background-color: #FAFAFA;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.colorPri {
+  color: #9b7f38;
+}
+
+.colorSec {
+  color: #715003;  
+}
+
+.colorTer {
+  color: #4B3B0A;
+}
+
+
+a {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+ul {
+  padding-left: 40px;
+  padding-right: 40px;
+  list-style-type: none;
+}
+
+@media (max-width: 767px) { 
+  ul {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+}
+
+.special-header {
+  position: fixed; /* Fixes the header at the top */
+  top: 0; /* Aligns the header at the top */
+  left: 0; /* Aligns the header to the left edge */
+  width: 100%; /* Makes sure the header spans the full width */
+  z-index: 1000; /* Ensures it stays above other content */
+  /* Add any additional styling as needed */
+}
+
+/* entire background */
+.bg {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+
+/* navigation links */
+
+.navigation {  
+  animation-duration: 0.5s;
+  padding-top: 20px;
+  padding-right: 40px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+  background-color: #F6DB96;
+  background-image: none;  
+  transition-duration: 0.5s;  
+  display: flex;  
+  vertical-align: middle;  
+  justify-content: center;
+  z-index: 100000;
+}
+
+.logo {  
+  max-width: 180px;
+  min-height: auto;
+  display: inline-block;
+  width: auto;
+}
+
+
+
+.alignment { 
+  display: flex;  
+  vertical-align: middle;  
+  align-items: center;
+  justify-content: center;
+  margin: 0px 20px;
+}
+
+.alignment2 { 
+  display: flex;  
+  vertical-align: middle;  
+  align-items: center;
+  justify-content: center;
+  margin: 0px 20px;
+}
+
+
+.mtb20 {
+  margin: 20px 0px !important;
+}
+.mtb10 {
+  margin: 10px 0px !important;
+}
+.mt110 {
+  margin-top: 110px !important;
+}
+.mt20 {
+  margin-top: 20px;
+}
+.mt10 {
+  margin-top: 10px;
+}
+.ptb40 {
+  padding: 40px 0px;
+}
+
+@media screen and (max-width: 1080px) {  
+  .navigation {
+    display: block;
+  }
+
+  .alignment { 
+    margin: 0px;
+  }
+
+}
+
+
+/* sections */
+/* dual compartment */
+
+.dualCompartment {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 0px 0px;
+  margin: 0px;
+
+}
+
+
+.img_fit {
+  width: 100%;
+  height: auto;
+}
+
+
+/* single compartment */
+
+.singleCompartmentContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+.singleCompartmentContainerContents {
+  display: flex;
+  justify-content: center;
+  flex-direction: column; 
+  max-width: 100%;
+  width: 1440px;
+  height: auto;
+  text-align: center;
+}
+
+.singleCompartmentContentsFullWidth {
+  display: flex;
+  max-width: 100%;
+  width: 1440px;
+  height: auto;
+
+}
+
+@media (max-width: 767px) { 
+  .alignment2 { 
+    padding-left: 0px;
+  }
+  /* dual compartment */
+
+  .dualCompartment {
+    flex-direction: column;
+  }
+
+  .singleCompartmentContainerContents {
+    padding: 0px 20px;
+  }
+}
+
+
+
+/* dual compartment stacked layout*/
+
+
+.dualCompartmentContainerStackedLayoutContents {
+  padding: 20px !important;
+  max-width: 100%;
+}
+
+.dualCompartmentStackedLayout {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+  padding: 0px 0px;
+  margin: 0px;
+  text-align: center;
+  box-sizing: border-box;
+
+
+  width: 100%;
+}
+
+
+/* Card Grid Container */
+/* Grid Container */
+.dualCompartmentContainerCardGrid {
+  display: flex; /* Default is row, so flex-direction: row; is implied */
+  justify-content: center; /* Center items horizontally within the child container */
+  align-items: center; /* Center items vertically within the child container */
+  gap: 10px; /* Add spacing between items */
+  flex-wrap: nowrap; /* Prevent items from wrapping to the next line */
+  box-sizing: border-box;
+}
+
+/* Card Styles */
+.dualCompartmentContainerCardGridStyles {
+  width: 100%; /* Full width of the parent container */
+  max-width: 535px; /* Max width for each card */
+  text-align: center; /* Center text inside cards */
+  padding: 5px;
+  height: auto;
+  min-height: unset;
+  background-color: rgba(32, 32, 32, 0.7);
+}
+
+.dualCompartmentContainerCardGridStyles2 {
+  width: 100%; /* Full width of the parent container */
+  max-width: 535px; /* Max width for each card */
+  text-align: center; /* Center text inside cards */
+  border: solid;
+  border: 0px;
+  border-radius: 10px;
+  padding: 0px 0px 20px 0px;
+  height: auto;
+  min-height: unset;
+  background-color: rgba(0, 0, 0, 0.9);
+
+  box-shadow: 0px 1px 3px 2px rgba(189, 189, 189, 0.4);
+}
+
+.CTACardGrid {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Center content horizontally within the container */
+  align-items: center; /* Center content vertically within the container */
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+  padding: 45px 20px;
+  height: auto;
+  min-height: unset;
+}
+
+.CTACard {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* Center content horizontally within the container */
+  flex-wrap: nowrap;
+  align-items: center; /* Center content vertically within the container */
+  text-align: center;
+  width: 100%;
+  max-width: 1100px;
+  padding: 45px 20px;
+  height: auto;
+  min-height: unset;
+  gap: 20px;
+
+}
+
+.CTACardGridContentsWidth {
+  max-width: 145px !important;
+}
+
+.CTACardContentsWidth {
+  width: 1500px;
+  max-width: 100% !important;
+}
+
+.footerpromotions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content horizontally within the container */
+  flex-wrap: nowrap;
+  align-items: center; /* Center content vertically within the container */
+  text-align: center;
+  width: 100%;
+  max-width: 1100px;
+  padding: 40px;
+  height: auto;
+  min-height: unset;
+  gap: 20px;
+  background-color: rgba(0, 0, 0, 0.4);
+
+}
+.positioningCardDescriptionHeading {
+  text-align: center;
+}
+
+.positioningCardDescriptionHeadingLeft {
+  text-align: left !important;
+  padding: 0px 20px !important;
+}
+
+@media (max-width: 767px) { 
+  .CTACard {
+    flex-direction: column;
+  }
+  .CTACardContentsWidth {
+    width: 350px;
+    max-width: 100% !important;
+  }
+  /* dual compartment stacked layout*/
+
+  .dualCompartmentContainerStackedLayoutContents {
+    padding: 0px;
+  }
+
+
+  /* Description position */
+  .positioningCardDescriptionHeadingLeft {
+    padding: 0px 10px !important;
+  }
+}
+
+
+
+/* logo carousel */
+
+
+.logo-carousel2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px; /* Space between images */
+}
+
+
+
+.logo-carousel2 img {
+  max-width: 40px;
+  height: auto;
+}
+
+
+@media (max-width: 768px) {
+  .logo-carousel2 {
+    justify-content: center;
+    padding: 0px 400px;
+  }
+
+  .logo-carousel2 img {
+    max-width: 35px;
+    height: auto;
+    flex: 1 1 100px; /* Flex-grow, flex-shrink, flex-basis */
+  }
+
+}
+
+
+
+
+
+
+/* headings */
+
+.heading1 {
+  font-family: 'Poppins';
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 64px;
+  padding: 5px 0px;
+}
+.heading2 {
+  font-family: 'Poppins';
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 64px;
+  padding: 5px 0px;
+}
+
+.heading3 {
+  font-family: 'Poppins';
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 40px;
+  padding: 5px 0px;
+}
+
+
+.heading4 {
+  font-family: 'Poppins';
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 40px;
+  padding: 5px 0px;
+}
+
+/* contents description */
+.descriptions{
+  font-family: 'Poppins';
+  color: rgb(13, 13, 13);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  padding: 5px 0px;
+}
+.descriptions2 {
+  font-family: 'Poppins';
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  padding: 5px 0px;
+
+}
+
+.footerdescriptions2 {
+  font-family: 'Poppins';
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  padding: 5px 0px;
+  text-decoration: none;
+}
+
+.metadescriptions {
+  font-family: 'Poppins';
+  color: rgb(199, 191, 191);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  padding: 5px 0px;
+}
+
+.footermetadescriptions {
+  font-family: 'Poppins';
+  color: #9b7f38;
+  
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  padding: 5px 0px;
+}
+
+@media screen and (max-width: 1024px) { 
+  /* headings */
+  .heading1 {
+    font-family: 'Poppins';
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 56px;
+    padding: 5px 0px;
+  }
+  .heading2 {
+    font-family: 'Poppins';
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 56px;
+    padding: 5px 0px;
+  }
+  .heading3 {
+    font-family: 'Poppins';
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    padding: 5px 0px;
+  }
+  .heading4 {
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 36px;
+    padding: 5px 0px;
+  }
+
+/* contents description */
+.descriptions{
+  font-family: 'Poppins';
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  padding: 5px 0px;
+}
+
+
+.descriptions2 {
+  font-family: 'Poppins';
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  padding: 5px 0px;
+
+}
+.footerdescriptions2 {
+  font-family: 'Poppins';
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  padding: 5px 0px;
+}
+.metadescriptions {
+  font-family: 'Poppins';
+  color: rgb(199, 191, 191);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  padding: 5px 0px;
+}
+.footermetadescriptions {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 22px;
+  padding: 5px 0px;
+}
+}
+
+@media (max-width: 767px) { 
+  /* headings */
+  .heading1 {
+    font-family: 'Poppins';
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 40px;
+    padding: 5px 0px;
+  }
+  .heading2 {
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 40px;
+    padding: 5px 0px;
+  }
+  .heading3 {
+    font-family: 'Poppins';
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 32px;
+    padding: 5px 0px;
+  }
+
+  .heading4 {
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 32px;
+    padding: 5px 0px;
+  }
+
+  /* contents description */
+  .descriptions{
+    font-family: 'Poppins';
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    padding: 5px 0px;
+  }
+
+.descriptions2 {
+  font-family: 'Poppins';
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  padding: 5px 0px;
+
+}
+.footerdescriptions2 {
+  font-family: 'Poppins';
+  color: white;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  padding: 5px 0px;
+}
+  .metadescriptions {
+    font-family: 'Poppins';
+    color: rgb(199, 191, 191);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 22px;
+    padding: 5px 0px;
+  }
+}
+
+
+
+
+
+/* CTA Button */
+
+.ctaButton {
+  border: 2px solid #d4b877;
+  color: #FAEECB;
+  background: linear-gradient(to top, #715003 0%, #9b7f38 50%, #F7DB96 100%);
+  box-shadow: 0px 0px 3px 2px #937a3c, 0px 0px 2px 2px #a27f25 inset;
+  border-radius: 17px;
+  font-weight: 600;
+  text-shadow: 0px 0px 5px #ac8b38;
+  padding: 8px 24px;
+  margin: 10px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.ctaButtonMes {
+  margin: 0;
+  padding: 0;  
+  text-decoration: none;  
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 1px;
+  
+  text-decoration: none;
+  list-style: none;
+}
+
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  padding: 20px 0px;
+  margin: 0px;
+  background-color: #F6DB96;
+}
+
+.solidDivider {
+  margin: 20px 0px;
+  height: 2px;
+  width: 100%;
+  background-color: #9b7f38 !important;  
+}
+
+@media (max-width: 768px) { 
+  footer {
+    padding: 10px 10px;
+  }
+  .solidDivider {
+    width: 100%;
+  }
+  
+}
+
+.singleCompartmentContainer2 {
+  display: flex;
+  justify-content: space-between; /* Space between elements */
+  flex-wrap: nowrap; /* Prevent wrapping until mobile screen size */
+  padding: 10px; /* Add padding around the container */
+  width: 100%;
+  max-width: 100%;
+}
+
+.childElement {
+  flex: 1; /* Make each child element take equal space */
+  text-align: center;
+  margin: 5px; /* Space between child elements */
+  padding: 10px; /* Add padding inside each element */
+  box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+.childElement2 {
+  display: flex;
+  flex: 1; /* Make each child element take equal space */
+  text-align: center; 
+  margin: 5px; /* Space between child elements */
+  padding: 10px; /* Add padding inside each element */
+  box-sizing: border-box; /* Ensure padding doesn't affect width */
+  flex-wrap: wrap;
+
+  flex-direction: column; /* Stack items vertically */
+}
+
+@media (max-width: 768px) {
+  .singleCompartmentContainer2 {
+    flex-wrap: wrap; /* Allow wrapping on mobile */
+  }
+
+  .childElement {
+    flex: 1 1 100%; /* Each element takes full width on mobile */
+    margin-bottom: 10px; /* Add space between wrapped items */
+    text-align: center; /* Align text to the left */
+  }
+}
+
+
+
+.fixed-button {
+  position: fixed;
+  bottom: 1.6vh;
+  left: 30%;
+  transform: translateX(-50%);
+  padding: 20px 45px;
+
+  font-family: 'Poppins';
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 40px;
+
+  background: linear-gradient(to top, #b8860b 0%, #ffd700 50%, #fffacd 100%);
+  box-shadow: 0px 0px 3px 2px #b8860b, 0px 0px 2px 2px #ffd700 inset;
+  
+  color: #4B3B0A;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 1000; /* Ensures it's on top of other elements */
+
+  filter: drop-shadow(0 0 10px rgba(255, 223, 0, 1));
+  animation: glowAnimation 3s ease-in-out infinite alternate;
+}
+
+/* Animation for the glowing effect */
+@keyframes glowAnimation {
+  from {
+    filter: drop-shadow(0 0 10px rgba(255, 223, 0, 1));
+  }
+  to {
+    filter: drop-shadow(0 0 30px rgba(255, 223, 0, 1));
+  }
+}
