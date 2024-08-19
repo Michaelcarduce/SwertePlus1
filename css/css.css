@@ -375,7 +375,6 @@ ul {
   .logo-carousel2 img {
     max-width: 35px;
     height: auto;
-    flex: 1 1 100px; /* Flex-grow, flex-shrink, flex-basis */
   }
 
 }
